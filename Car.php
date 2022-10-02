@@ -6,22 +6,18 @@ class Car
     private string $color;
     private int $currentSpeed;
     private int $nbSeats;
-    private int $nbWheels;
+    private int $nbWheels=4;
     private string $energy;
-    private int $energyLevel;
+    private int $energyLevel=0;
     
 
     // methods
 
-    public function __construct (string $color, int $currentSpeed, int $nbSeats, int $nbWheels, string $energy, int $energyLevel) 
+    public function __construct (string $color, int $nbSeats, string $energy) 
     {
         $this->color = $color;
-        $this->currentSpeed = $currentSpeed;
         $this->nbSeats = $nbSeats;
-        $this->nbWheels = $nbWheels;
         $this->energy = $energy;
-        $this->energyLevel = $energyLevel;
-        
     }
     
     public function getColor() : string 

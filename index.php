@@ -25,7 +25,7 @@ echo $secondBike->getNbWheels(). RETOUR_A_LA_LIGNE;
 
 // cars ---------------------------
 
-$car = new Car("Vert", 0, 5, 4, "SP98", 60);
+$car = new Car("Vert", 5, "SP98");
 var_dump($car) ;
 
 echo $car->start() . RETOUR_A_LA_LIGNE;
@@ -42,5 +42,5 @@ echo $car->getNbWheels(). RETOUR_A_LA_LIGNE;
 echo $car->getEnergy(). RETOUR_A_LA_LIGNE;
 echo $car->getEnergyLevel(). RETOUR_A_LA_LIGNE;
 
-$car2 = new Car("Noir", 0, 2, 4, "GPL", 100);
+$car2 = new Car("Noir", 2, "GPL");
 var_dump($car) ;
